@@ -65,3 +65,12 @@ function applydiscount(price, discount) { // Create function to determine final 
     return finalPrice; // Return final price
 }
 applydiscount(200, 30); // Discount example amount
+
+// Task 10: Arrow Function 
+
+let calculatePoints = (purchaseAmount) => {
+    points = purchaseAmount / 10;
+    console.log(`You earned ${calculatePoints} points`);
+    return points;
+}
+calculatePoints(100)
