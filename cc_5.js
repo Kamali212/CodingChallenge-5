@@ -51,26 +51,24 @@ console.log(locateCustomer); // Log customer to console
 // Task 8: Function Declaration 
 
 function calculateTax(amount, taxRate) {
-    tax = amount * (taxRate / 100); // Create function to calcualte tax
-    console.log(`The tax amount is $${tax}`); // Log tax amount to console with template literal
-    return tax; // Return tax amount
+    return amount * (taxRate / 100); // Create function to calculate tax
+    
 }
-calculateTax(100, 20); // Tax example amount
+let taxAmount = calculateTax(100, 20); // Tax example amount
+console.log(`The tax amount is $${taxAmount}`); // Log tax amount to console with template literal
 
 // Task 9: Function Expression 
 
-function applydiscount(price, discount) { // Create function to determine final price after discount
-    finalPrice = price - (price * discount / 100);
-    console.log(`The final price is $${finalPrice}`); // Log final price to console with template litera
-    return finalPrice; // Return final price
+function applyDiscount(price, discount) { // Create function to determine final price after discount
+    return price - (price * discount / 100);
 }
-applydiscount(200, 30); // Discount example amount
+let finalPrice = applyDiscount(200, 30); // Apply function
+console.log(`The final price is $${finalPrice}`); // Log final price to console
 
 // Task 10: Arrow Function 
 
 let calculatePoints = (purchaseAmount) => {
-    points = purchaseAmount / 10;
-    console.log(`You earned ${calculatePoints} points`);
-    return points;
+    return purchaseAmount / 10;
 }
-calculatePoints(100)
+let points = calculatePoints(100);
+console.log(`You earned ${points} points`);
