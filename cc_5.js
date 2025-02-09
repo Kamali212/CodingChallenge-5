@@ -37,10 +37,17 @@ console.log(inventoryCount) // Log inventory count to console
 
 // Task 6: Reduce Method 
 
-let sales = [900, 200, 400, 500, 700];
-revenueSum = sales.reduce(
+let sales = [900, 200, 400, 500, 700]; // Declare an array 
+revenueSum = sales.reduce( // Use reduce method to sum sales
     (accumulator, currentValue) => accumulator + currentValue, 0);
-console.log(`Revenue Sum: $${revenueSum}`)
+console.log(`Revenue Sum: $${revenueSum}`) // Log revenue sum to console
+
+// Task 7: find() Method
+
+let customers = ["Alice", "Bob", "Charlie", "David"]; // Declare an array
+locateCustomer = customers.find((customer) => customer === "Charlie") // Use find method to find Charlie
+console.log(locateCustomer) // Log customer to console
+
 
 
 
