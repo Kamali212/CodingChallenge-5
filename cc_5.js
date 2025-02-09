@@ -23,3 +23,11 @@ product.unshift("Float"); // Add new product at beginning
 product.shift(); // Remove first product 
 console.log(product);
 
+// Task 4: Map Method 
+
+const prices = [450, 280, 920]; // Declare an array
+const discountPrice = prices.map(price => price * (1 - 0.10)); // Apply 10% discount using map method
+console.log(discountPrice); // Log new discounted prices to the console
+
+
+
