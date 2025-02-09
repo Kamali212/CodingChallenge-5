@@ -45,9 +45,15 @@ console.log(`Revenue Sum: $${revenueSum}`) // Log revenue sum to console
 // Task 7: find() Method
 
 let customers = ["Alice", "Bob", "Charlie", "David"]; // Declare an array
-locateCustomer = customers.find((customer) => customer === "Charlie") // Use find method to find Charlie
-console.log(locateCustomer) // Log customer to console
+locateCustomer = customers.find((customer) => customer === "Charlie"); // Use find method to find Charlie
+console.log(locateCustomer); // Log customer to console
 
+// Task 8: Function Declaration 
 
-
+function calculateTax(amount, taxRate) {
+    tax = amount * (taxRate / 100); // Create function to calcualte tax
+    console.log(`The tax amount is $${tax}`); // Log tax amount to console with template literal
+    return tax;
+}
+calculateTax(100, 0.20); // Tax example amount
 
