@@ -14,4 +14,12 @@ displayOrder() { // Log details of order when called
 };
 order.displayOrder(); // Logs order details to console
 
+// Task 3: Array Manipulation
+
+let product = ["Burger", "Fries", "Soda"]; // Declare an array
+product.push("Milkshake"); // Add a new product
+product.pop; // Remove last product
+product.unshift("Float"); // Add new product at beginning
+product.shift(); // Remove first product 
+console.log(product);
 
