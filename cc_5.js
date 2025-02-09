@@ -53,7 +53,15 @@ console.log(locateCustomer); // Log customer to console
 function calculateTax(amount, taxRate) {
     tax = amount * (taxRate / 100); // Create function to calcualte tax
     console.log(`The tax amount is $${tax}`); // Log tax amount to console with template literal
-    return tax;
+    return tax; // Return tax amount
 }
-calculateTax(100, 0.20); // Tax example amount
+calculateTax(100, 20); // Tax example amount
 
+// Task 9: Function Expression 
+
+function applydiscount(price, discount) { // Create function to determine final price after discount
+    finalPrice = price - (price * discount / 100);
+    console.log(`The final price is $${finalPrice}`); // Log final price to console with template litera
+    return finalPrice; // Return final price
+}
+applydiscount(200, 30); // Discount example amount
